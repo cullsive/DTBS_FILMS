@@ -1,0 +1,114 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FILM_DB</title>
+    <link rel="shortcut icon" href="./1631337073364.png" type="image/png">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+    <h1>Dashboard Shipments</h1>
+
+    <label for="filterDate">La date d'aujourd'hui :</label>
+    <input type="text" id="filterDate" class="input-date">
+
+
+    <h2>Rechercher F.S</h2>
+    <input type="text" id="searchUsers" class="input-search" placeholder="Rechercher un utilisateur">
+
+    <table id="usersTable" class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Type_de_film</th>
+                <th>Titre</th>
+                <th>Acteur_PR</th>
+                <th>Histoire</th>
+                <th>Date_de_sortie</th>
+            </tr>
+        </thead>	
+        <tbody id="resultat">
+
+       </tbody>
+    </table>
+
+
+<script>
+
+
+
+
+// -----------------------------------------------------------------------tri 
+
+// Afficher la date actuelle dans l'input
+function afficherDateActuelle() {
+    const now = new Date();
+
+    const jour = String(now.getDate()).padStart(2, "0");
+    const mois = String(now.getMonth() + 1).padStart(2, "0");
+    const annee = now.getFullYear();
+
+    const heure = String(now.getHours()).padStart(2, "0");
+    const minute = String(now.getMinutes()).padStart(2, "0");
+
+    const format = `${jour}/${mois}/${annee} ${heure}:${minute}`;
+
+    document.getElementById("filterDate").value = format;
+}
+
+afficherDateActuelle();
+
+
+// Tri des colonnes
+function sortTable(table, colIndex) {
+    const tbody = table.querySelector("tbody");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    rows.sort((a, b) => {
+        const A = a.children[colIndex].innerText.toLowerCase();
+        const B = b.children[colIndex].innerText.toLowerCase();
+        return A.localeCompare(B);
+    });
+
+    rows.forEach(row => tbody.appendChild(row));
+}
+
+document.querySelectorAll("th").forEach((th, index) => {
+    th.addEventListener("click", () => {
+        const table = th.closest("table");
+        sortTable(table, index);
+    });
+});
+
+
+// Recherche normale
+function addSearch(inputId, tableId) {
+    const input = document.getElementById(inputId);
+    const table = document.getElementById(tableId);
+
+    input.addEventListener("input", function() {
+        const value = this.value.toLowerCase();
+        table.querySelectorAll("tbody tr").forEach(row => {
+            row.style.display = row.innerText.toLowerCase().includes(value) ? "" : "none";
+        });
+    });
+}
+
+addSearch("searchUsers", "usersTable");
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
