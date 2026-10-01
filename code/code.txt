@@ -1,0 +1,60 @@
+
+
+--------------------------------serie-----------------------------------
+
+
+
+INSERT INTO FILM_CULL(TYPE_DE_FILM, TITRE, ACTEUR_PR, HISTOIRE, DATE_DE_SORTIE) VALUES
+-- --- SÉRIES DÉJÀ SORTIES (CLASSIQUES & RÉCENTES) ---
+('Drame', 'Breaking Bad', 'Bryan Cranston', 'Un professeur de chimie atteint d''un cancer se lance dans la fabrication de méthamphétamine.', '2008-01-20'),
+('Fantasy', 'Game of Thrones', 'Kit Harington', 'Neuf familles nobles se battent pour le contrôle du trône de Fer dans le pays de Westeros.', '2011-04-17'),
+('Sci-Fi', 'Stranger Things', 'Millie Bobby Brown', 'Un groupe d''amis fait face à des forces surnaturelles et des complots gouvernementaux.', '2016-07-15'),
+('Drame', 'Succession', 'Brian Cox', 'La lutte de pouvoir au sein d''une famille dysfonctionnelle à la tête d''un empire des médias.', '2018-06-03'),
+('Drame', 'The Bear', 'Jeremy Allen White', 'Un jeune chef issu de la haute gastronomie revient à Chicago pour gérer le sandwich de sa famille.', '2022-06-23'),
+('Sci-Fi', 'Severance', 'Adam Scott', 'Des employés d''une entreprise subissent une opération pour séparer leurs souvenirs professionnels et personnels.', '2022-02-18'),
+('Drame', 'The Last of Us', 'Pedro Pascal', 'Un survivant endurci escorte une jeune fille à travers une Amérique post-apocalyptique dévastée.', '2023-01-15'),
+('Drame', 'Shōgun', 'Hiroyuki Sanada', 'L''ascension d''un seigneur de guerre japonais face à des rivaux politiques au XVIIe siècle.', '2024-02-27'),
+('Sci-Fi', 'Fallout', 'Ella Purnell', 'Une habitante d''un abri anti-atomique s''aventure dans les terres dévastées de Los Angeles.', '2024-04-10'),
+('Comédie', 'Ted Lasso', 'Jason Sudeikis', 'Un entraîneur de football américain est recruté pour manager une équipe de football anglaise.', '2020-08-14'),
+('Action', 'Reacher', 'Alan Ritchson', 'Un ancien policier militaire nomade résout des conspirations criminelles mortelles.', '2022-02-04'),
+('Crime', 'Better Call Saul', 'Bob Odenkirk', 'La transformation de l''avocat Jimmy McGill en l''escroc dévoué à la pègre, Saul Goodman.', '2015-02-08'),
+('Drame', 'Peaky Blinders', 'Cillian Murphy', 'Une famille de criminels règne sur Birmingham au lendemain de la Première Guerre mondiale.', '2013-09-12'),
+('Thriller', 'Lupin', 'Omar Sy', 'Un gentleman cambrioleur s''inspire d''Arsène Lupin pour venger son père d''une riche famille.', '2021-01-08'),
+('Crime', 'True Detective', 'Matthew McConaughey', 'Des enquêtes policières sombres et complexes menées par des détectives tourmentés.', '2014-01-12'),
+('Sci-Fi', 'Black Mirror', 'Bryce Dallas Howard', 'Une série d''anthologie explorant notre malaise collectif face au monde moderne et à la technologie.', '2011-12-04'),
+('Thriller', 'The Night Agent', 'Gabriel Basso', 'Un agent subalterne du FBI se retrouve plongé au cœur d''une conspiration mortelle au sein de la Maison-Blanche.', '2023-03-23'),
+('Comédie', 'Hacks', 'Jean Smart', 'La relation de travail complexe entre une légende du stand-up de Las Vegas et une jeune scénariste.', '2021-05-13'),
+('Drame', 'The Crown', 'Claire Foy', 'Les rivalités politiques et les intrigues personnelles qui ont marqué le règne de la reine Elizabeth II.', '2016-11-04'),
+('Crime', 'The Gentlemen', 'Theo James', 'Un aristocrate hérite du domaine familial et découvre qu''il abrite un immense empire du cannabis.', '2024-03-07'),
+('Sci-Fi', 'Silo', 'Rebecca Ferguson', 'Dans un avenir toxique, une communauté survit dans un silo souterrain géant soumis à des règles strictes.', '2023-05-05'),
+('Drame', 'Euphoria', 'Zendaya', 'Le quotidien de lycéens naviguant entre amour, traumatismes, amitiés et addictions.', '2019-06-16'),
+('Thriller', 'Hijack', 'Idris Elba', 'Le voyage d''un avion détourné vers Londres est suivi en temps réel sur une durée de sept heures.', '2023-06-28'),
+('Comédie', 'Shrinking', 'Jason Segel', 'Un thérapeute en deuil commence à dire à ses patients exactement ce qu''il pense d''eux.', '2023-01-27'),
+('Drame', 'House of the Dragon', 'Matt Smith', 'L''histoire de la guerre civile de la maison Targaryen, 200 ans avant les événements de Game of Thrones.', '2022-08-21'),
+
+-- --- SÉRIES TRÈS RÉCENTES OU ENCORE À SORTIR (2026/2027) ---
+('Fantasy', 'A Knight of the Seven Kingdoms', 'Peter Claffey', 'Un siècle avant Game of Thrones, un jeune chevalier errant et son écuyer explorent Westeros.', '2026-01-18'),
+('Action', 'Wonder Man', 'Yahya Abdul-Mateen II', 'Un acteur hollywoodien auditionne pour un rôle de super-héros et acquiert de super-pouvoirs réels.', '2026-01-27'),
+('Drame', 'The Madison', 'Michelle Pfeiffer', 'Une famille quitte New York pour s''installer dans la vallée sauvage de la Madison River dans le Montana.', '2026-03-14'),
+('Drame', 'The Other Bennet Sister', 'Ella Bruccoleri', 'L''histoire de Mary Bennet, la sœur cadette oubliée d''Orgueil et Préjugés, cherchant son indépendance.', '2026-03-15'),
+('Action', 'Daredevil: Born Again', 'Charlie Cox', 'Le retour du justicier aveugle de Hell''s Kitchen face à la corruption menée par le Caïd.', '2026-03-24'),
+('Comédie', 'Rooster', 'Steve Carell', 'Une comédie universitaire décalée suivant le quotidien absurde d''un doyen de faculté dépassé.', '2026-03-08'),
+('Horreur', 'Widow''s Bay', 'Matthew Rhys', 'Une comédie horrifique se déroulant dans une baie mystique isolée et frappée par des malédictions.', '2026-04-12'),
+('Crime', 'MobLand', 'Tom Hardy', 'A Londres, la rivalité brutale de deux clans criminels menace de faire s''effondrer un empire mafieux.', '2025-03-30'),
+('Sci-Fi', 'Alien: Earth', 'Sydney Chandler', 'L''arrivée tragique et mystérieuse de la créature xénomorphe sur la planète Terre pour la première fois.', '2025-11-15'),
+('Drame', 'The Pitt', 'Noah Wyle', 'Une immersion hyper-réaliste et sans musique dans le quotidien médical intense d''un hôpital moderne.', '2025-01-08'),
+('Crime', 'Lanterns', 'Aaron Pierre', 'Deux flics intergalactiques de l''univers DC enquêtent sur un meurtre mystérieux au cœur des États-Unis.', '2026-08-15'),
+('Crime', 'Young Sherlock', 'Hero Fiennes Tiffin', 'Les premières enquêtes explosives et initiatiques d''un Sherlock Holmes âgé de 19 ans.', '2026-04-12'),
+('Thriller', 'Cape Fear', 'Javier Bardem', 'Un avocat et sa famille sont terrorisés par un criminel psychopathe tout juste sorti de prison.', '2026-10-15'),
+('Sci-Fi', 'Blade Runner 2099', 'Michelle Yeoh', 'Une suite se déroulant cinquante ans après les événements du chef-d''œuvre de science-fiction cyberpunk.', '2026-11-25'),
+('Drame', 'Harry Potter', 'Acteur Inconnu', 'Une adaptation fidèle et inédite, livre par livre, de la célèbre saga littéraire fantastique.', '2026-09-01'),
+('Crime', 'Spider-Noir', 'Nicolas Cage', 'Un détective privé vieillissant et désabusé combat le crime dans le New York des années 1930.', '2026-11-01'),
+('Sci-Fi', 'Neuromancer', 'Callum Turner', 'Un hacker de génie au système nerveux détruit est recruté pour un piratage informatique ultime.', '2027-01-22'),
+('Crime', 'The Savant', 'Jessica Chastain', 'Une femme spécialiste de l''infiltration traque les criminels les plus dangereux du pays sur le web.', '2027-02-15'),
+('Anime', 'The One Piece', 'Mayumi Tanaka', 'Un tout nouveau remake de l''adaptation du célèbre manga de pirates repensé par WIT Studio.', '2027-02-15'),
+('Crime', 'Prison Break (Revival)', 'Acteur Inconnu', 'Une toute nouvelle génération de détenus tente de s''évader d''un complexe pénitencier de haute sécurité.', '2027-04-01'),
+('Sci-Fi', 'Star Trek: Starfleet Academy', 'Holly Hunter', 'Les aventures et la formation des nouveaux cadets de l''académie spatiale au 32ème siècle.', '2026-06-15'),
+('Crime', 'Scarpetta', 'Nicole Kidman', 'Une médecin légiste réputée utilise des technologies de pointe pour résoudre des meurtres complexes.', '2026-07-20'),
+('Sci-Fi', 'Star Wars: Maul - Shadow Lord', 'Sam Witwer', 'Une série d''animation plongeant dans les recoins sombres du passé du seigneur Sith Dark Maul.', '2026-05-15'),
+('Crime', 'Legends', 'Guy Pearce', 'Une opération d''infiltration gouvernementale secrète pour faire tomber un trafic de drogue dans les années 90.', '2026-09-10'),
+('Thriller', 'Something Very Bad Is Going to Happen', 'Actrice Inconnue', 'Un thriller psychologique tendu se déroulant dans l''ambiance feutrée mais angoissante d''un mariage.', '2026-10-31')
